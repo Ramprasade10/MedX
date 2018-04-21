@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Diagnostics">
+
+    <CheckBox
+        android:text="Common cold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/headache"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/commonc" />
+
+    <CheckBox
+        android:text="Cough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/commonc"
+        android:layout_toEndOf="@+id/commonc"
+        android:layout_marginStart="10dp"
+        android:id="@+id/cough" />
+
+    <CheckBox
+        android:text="Chest Pain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headache"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/chestpain" />
+
+    <CheckBox
+        android:text="Weakness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chestpain"
+        android:layout_alignStart="@+id/commonc"
+        android:id="@+id/weakness" />
+
+    <CheckBox
+        android:text="Nausea And Vomitting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weakness"
+        android:layout_alignStart="@+id/cough"
+        android:id="@+id/nnv" />
+
+    <CheckBox
+        android:text="Red Eyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Bodymuscle"
+        android:layout_alignStart="@+id/weakness"
+        android:layout_marginTop="15dp"
+        android:id="@+id/redeyes" />
+
+    <CheckBox
+        android:text="Throat Pain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/redeyes"
+        android:layout_alignStart="@+id/nnv"
+        android:id="@+id/throatpain" />
+
+    TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bodymuscle"
+        android:layout_marginTop="52dp"
+        android:textSize="35dp"
+        android:id="@+id/result"
+        android:layout_toRightOf="@+id/redeyes"
+        android:layout_toEndOf="@+id/redeyes" />
+
+    <CheckBox
+        android:text="Head Ache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/headache"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/chestpain"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:text="Diagnostics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="30dp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Please select the symptoms of the problem you are facing !! "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="20dp"
+        android:layout_below="@+id/redeyes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <CheckBox
+        android:text="Body Aches And Muscle Pain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/Bodymuscle"
+        android:layout_below="@+id/nnv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Diagnose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:onClick="diag"
+        android:id="@+id/diagnose"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView5"
+        android:layout_toLeftOf="@+id/cough"
+        android:layout_toStartOf="@+id/cough" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diagnose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/result" />
+
+</RelativeLayout>

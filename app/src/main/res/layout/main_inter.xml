@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainInter">
+
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+    android:background="@drawable/diag"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageButton"
+        android:onClick="diag"/>
+
+    <TextView
+        android:text="Medical Tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView6"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/imageButton2"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:text=" Winter is the season for colds and flu. According to Dr William Bird, medical consultant of the Meteorological Office's Health Forecast Unit, December is when infections tend to become prevalent."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:id="@+id/textView9"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:text="Ten ways to avoid colds and flu this winter:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="There are two main types of diabetes- type 1 diabetes in which the body does not produce insulin and type 2 diabetes in which the body does not produce enough insulin or the insulin that is produced does not work properly...... http://www.top10homeremedies.com/home-remedies/home-remedies-for-diabetes.html"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="7dp"
+        android:id="@+id/textView11"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Home Remedies for Diabetes:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textStyle="normal|bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=" How to remove pimples fast How to get rid of pimples at home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:id="@+id/textView12"
+        android:textSize="20dp"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text=" Pimples are a very common skin issue that affects people of different ages. Excessive oil  secretion from the oil glands present in the skin is certainly one of the primary reasons of pimples.... https://beautyhealthtips.in/how-to-remove-pimples-naturally-at-home/ "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="7dp"
+        android:id="@+id/textView13"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/doc"
+        android:onClick="doctor"
+        android:id="@+id/imageButton2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/medpill"
+        android:id="@+id/imageButton3"
+        android:onClick="reminder"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8" />
+</RelativeLayout>

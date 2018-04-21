@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Register">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CREATE ACCOUNT"
+        android:id="@+id/tv_create_account"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tv_create_account"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/name"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:maxLength="20"
+            android:hint="Name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:hint="Username"
+            android:maxLength="15"
+            android:lines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            android:id="@+id/pwd1"
+            android:layout_gravity="center_horizontal"
+            android:hint="Password"
+            android:textSize="30sp"
+            android:maxLength="20"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/pwd2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:hint="Re-Enter Password"
+            android:maxLength="20"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/phno"
+            android:layout_gravity="center_horizontal"
+            android:hint="Phone Number"
+            android:textSize="30sp"
+            android:maxLength="30"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE"
+            android:id="@+id/create"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:onClick="create"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:id="@+id/back"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:onClick="back" />
+
+    </LinearLayout>
+
+</RelativeLayout>
